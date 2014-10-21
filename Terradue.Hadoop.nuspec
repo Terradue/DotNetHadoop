@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Terradue.Hadoop</id>
+    <version>1.3.2</version>
+    <title>Terradue.Hadoop</title>
+    <authors>Terradue</authors>
+    <licenseUrl>https://github.com/Terradue/DotNetOpenSearch/blob/master/LICENSE</licenseUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Terradue.Hadoop is a library targeting .NET 4.0 and above with base for all Terradue.Hadoop</description>
+    <summary>Terradue Hadoop library for .Net</summary>
+    <dependencies>
+      <dependency id="ServiceStack" version="[3.9.71]" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Terradue.Hadoop/bin/Terradue.Hadoop.dll" target="lib/net40/Terradue.Hadoop.dll" />
+  </files>
+
+</package>
+
