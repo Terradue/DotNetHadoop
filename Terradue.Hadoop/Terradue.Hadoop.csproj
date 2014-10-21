@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <BuildDir>$(MSBuildProjectDirectory)</BuildDir>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{26BB460D-845D-440B-B81B-778F5A952C3F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Terradue.Hadoop</RootNamespace>
+    <AssemblyName>Terradue.Hadoop</AssemblyName>
+    <SynchReleaseVersion>false</SynchReleaseVersion>
+    <UseMSBuildEngine>False</UseMSBuildEngine>
+    <ReleaseVersion>1.3.1</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Core" />
+    <Reference Include="ServiceStack.Text">
+      <HintPath>..\packages\ServiceStack.Text.3.9.71\lib\net35\ServiceStack.Text.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Terradue\Hadoop\Common\Resource.cs" />
+    <Compile Include="Terradue\Hadoop\WebHDFS\Adapters\WebHDFSStorageAdapter.cs" />
+    <Compile Include="Terradue\Hadoop\WebHDFS\ContentSummary.cs" />
+    <Compile Include="Terradue\Hadoop\WebHDFS\DirectoryEntry.cs" />
+    <Compile Include="Terradue\Hadoop\WebHDFS\DirectoryListing.cs" />
+    <Compile Include="Terradue\Hadoop\WebHDFS\FileChecksum.cs" />
+    <Compile Include="Terradue\Hadoop\WebHDFS\WebHDFSClient.cs" />
+    <Compile Include="Terradue\Hadoop\WebHDFS\RemoteException.cs" />
+    <Compile Include="Terradue\Hadoop\WebHDFS\SafeModeException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Terradue.Hadoop.csproj" />
+  </ItemGroup>
+</Project>
