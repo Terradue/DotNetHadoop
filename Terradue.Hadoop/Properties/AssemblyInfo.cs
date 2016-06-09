@@ -5,13 +5,13 @@ using System.Runtime.CompilerServices;
 
 \namespace Terradue.Hadoop
 @{
-    Terradue.Hadoop Software Package
+    Terradue.Hadoop is a .NET module that provides with a functional layer to major feature of Hadoop (HDFS, MapReduce...)
 
     \xrefitem sw_version "Versions" "Software Package Version" 1.3.2
 
-    \xrefitem sw_link "Links" "Software Package List" [Terradue.Cloud](https://git.terradue.com/sugar/terradue-hadoop)
+    \xrefitem sw_link "Links" "Software Package List" [Terradue.Hadoop](https://git.terradue.com/sugar/terradue-hadoop)
 
-    \xrefitem sw_license "License" "Software License" [incubating](https://git.terradue.com/sugar/terradue-hadoop)
+    \xrefitem sw_license "License" "Software License" [incubating](https://git.terradue.com/sugar/terradue-hadoop/LICENSE)
     
     \ingroup Cloud
 @}
