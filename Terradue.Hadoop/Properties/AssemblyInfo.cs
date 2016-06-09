@@ -11,7 +11,7 @@ using System.Runtime.CompilerServices;
 
     \xrefitem sw_link "Links" "Software Package List" [Terradue.Hadoop](https://git.terradue.com/sugar/terradue-hadoop)
 
-    \xrefitem sw_license "License" "Software License" [incubating](https://git.terradue.com/sugar/terradue-hadoop/LICENSE)
+    \xrefitem sw_license "License" "Software License" [AGPL](https://git.terradue.com/sugar/terradue-hadoop/LICENSE)
     
     \ingroup Cloud
 @}
